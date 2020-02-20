@@ -161,9 +161,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Junges\ACL\ACLServiceProvider::class,
-        Junges\ACL\ACLAuthServiceProvider::class,
-        Junges\ACL\ACLEventsServiceProvider::class,
 
         /*
          * Package Service Providers...

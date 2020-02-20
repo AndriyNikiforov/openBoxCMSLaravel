@@ -2,13 +2,12 @@
 
 namespace App\Models;
 
-use Junges\ACL\Traits\UsersTrait;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use UsersTrait, Notifiable;
+    use Notifiable;
 
     protected $table = 'users';
 
