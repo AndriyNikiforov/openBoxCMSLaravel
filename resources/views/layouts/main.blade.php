@@ -11,9 +11,9 @@
                 OpenBox CMS
             </a>
         </nav>
-        <div class="container">
+        <main class="container">
             @yield('content')
-        </div>
+        </main>
     <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
