@@ -38,7 +38,7 @@ class AuthController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('welcome');
+        return redirect()->route('');
     }
 
     public function register(RegisterRequest $request)
@@ -50,13 +50,12 @@ class AuthController extends Controller
         $user->save();
         Auth::login($user);
 
-        return redirect()->route('welcome');
+        return redirect()->route('');
     }
 
     public function logout()
     {
         Auth::logout();
-
         return redirect()->route('login');
     }
 }
